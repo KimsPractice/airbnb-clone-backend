@@ -6,7 +6,7 @@ class CommonModel(models.Model):
     """Common Model Definition"""
 
     created_at = models.DateTimeField(auto_now_add=True)
-    upated_at = models.DateTimeField(auto_now=True)
+    updated_at = models.DateTimeField(auto_now=True, null=True)
 
     class Meta:
         abstract = True
