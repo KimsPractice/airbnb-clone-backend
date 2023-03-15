@@ -13,8 +13,14 @@ class Room(CommonModel):
         SHARED_ROOM = ("shared_room", "Shared Room")
 
     name = models.CharField(max_length=180, default="")
-    country = models.CharField(max_length=50, default="한국")
-    city = models.CharField(max_length=80, default="서울")
+    country = models.CharField(
+        max_length=50,
+        default="한국",
+    )
+    city = models.CharField(
+        max_length=80,
+        default="서울",
+    )
     price = models.PositiveIntegerField()
     round = models.PositiveIntegerField()
     toilets = models.PositiveIntegerField()
